@@ -1,35 +1,13 @@
 ================================================================================
-                              ´úÂëÒÆÖ²¼°ÍêÉÆËµÃ÷
+                              ä»£ç ç§»æ¤åŠå®Œå–„è¯´æ˜Ž
 ================================================================================
 
-1£¬Ê¹ÓÃ¡°startup_stm32f103x6.s¡±Ìæ»»µô×ó²à¡°project¡±À¸ÖÐµÄ¡°startup_stm32f10x_md.s¡±¡£·ñÔòÖ±½ÓÐÞ¸Ä¡°Options for Target¡±ÏÂµÄ¡°Device¡±ÏÂµÄ¡°STM32F103C6¡±ºó±àÒë»á±¨´í¡£
-ËµÃ÷£º
-	startup_stm32f10x_ld.s ¶ÔÓ¦Ð¡ÈÝÁ¿ÐÍ£¨Low Density£¬FlashÈÝÁ¿²»´óÓÚ32Kb£©F103²úÆ·µÄÆô¶¯ÎÄ¼þ,
-	startup_stm32f10x_md.s ¶ÔÓ¦ÖÐÈÝÁ¿ÐÍ£¨Medium Density£¬FlashÈÝÁ¿½éÓÚ64KbºÍ128Kb£©F103²úÆ·µÄÆô¶¯ÎÄ¼þ£¬
-	startup_stm32f10x_hd.s ¶ÔÓ¦´óÈÝÁ¿ÐÍ£¨High Density£¬FlashÈÝÁ¿²»Ð¡ÓÚ256Kb£©F103²úÆ·µÄÆô¶¯ÎÄ¼þ¡£
+1ï¼Œä½¿ç”¨â€œstartup_stm32f103x6.sâ€æ›¿æ¢æŽ‰å·¦ä¾§â€œprojectâ€æ ä¸­çš„â€œstartup_stm32f10x_md.sâ€ã€‚å¦åˆ™ç›´æŽ¥ä¿®æ”¹â€œOptions for Targetâ€ä¸‹çš„â€œDeviceâ€ä¸‹çš„â€œSTM32F103C6â€åŽç¼–è¯‘ä¼šæŠ¥é”™ã€‚
+è¯´æ˜Žï¼š
+	startup_stm32f10x_ld.s å¯¹åº”å°å®¹é‡åž‹ï¼ˆLow Densityï¼ŒFlashå®¹é‡ä¸å¤§äºŽ32Kbï¼‰F103äº§å“çš„å¯åŠ¨æ–‡ä»¶,
+	startup_stm32f10x_md.s å¯¹åº”ä¸­å®¹é‡åž‹ï¼ˆMedium Densityï¼ŒFlashå®¹é‡ä»‹äºŽ64Kbå’Œ128Kbï¼‰F103äº§å“çš„å¯åŠ¨æ–‡ä»¶ï¼Œ
+	startup_stm32f10x_hd.s å¯¹åº”å¤§å®¹é‡åž‹ï¼ˆHigh Densityï¼ŒFlashå®¹é‡ä¸å°äºŽ256Kbï¼‰F103äº§å“çš„å¯åŠ¨æ–‡ä»¶ã€‚
 
-²Î¿¼ÎÄµµ
-	1.1 stm32Ð¡ÈÝÁ¿¡¢ÖÐÈÝÁ¿ºÍ´óÈÝÁ¿²ú ÔÚÑ¡ÔñÆô¶¯ÎÄ¼þÊ±¸ÃÔõÃ´Ñ¡ £¨http://news.eeworld.com.cn/mcu/article_2016092529767.html£©
-	1.2 STM32F103Ð¡ÈÝÁ¿¡¢ÖÐÈÝÁ¿ºÍ´óÈÝÁ¿µ¥Æ¬»ú½éÉÜ_stm32f103µ¥Æ¬»ú½éÉÜ (https://blog.csdn.net/wsq_666/article/details/124135035)
-	
-	
-2£¬È¥µôÁËÔ­´úÂë£¨»ùÓÚSTM32F103C8T6£©ÖÐµÄ²¿·ÖÈßÓà¼°ÎÞÓÃ´úÂë£¬²¢¹æ·¶ÁË´úÂë·ç¸ñ£¬Ìí¼ÓÁËÏêÏ¸µÄÖÐÎÄ×¢ÊÍ
-
-
-3£¬¹ØÓÚÉÏ´ÎÊµÑé¿ÎÎÂÊª¶È´«¸ÐÆ÷SHT30µ÷ÊÔÖÐ³öÏÖµÄÎÊÌâ£¬¿ÉÒÔ°´ÕÕÒÔÏÂ½øÐÐ³¢ÊÔ½â¾ö£º
-	1£©²ÎÕÕÉÏÃæµÄ¡°1¡±£¬²¢ÐÞ¸Ä¡°Options for Target¡±ÏÂµÄ¡°Preprocessor Symbols¡±ÏÂµÄ¡°Define¡±Îª¡°STM32F10X¡±£¬¼û²Î¿¼ÎÄµµ1.2ÖÐµÄ¡°³£¼û´íÎó¶þ¡±
-	2£©Í³Ò»³ÌÐòÖÐµÄSDA¡¢SCLÒý½ÅºÍÓ²¼þµçÂ·µÄÊµ¼ÊÁ¬½Ó£¬Ê¹SHT30µÄ¿ØÖÆÒý½ÅÓëMCUµÄ¹¦ÄÜÒý½Å¶ÔÓ¦
-	3£©ÇóÖú
-	4£©ÐÞ¸Äµ±Ç°ProjectµÄÂ·¾¶ÎªÈ«Ó¢ÎÄ
-	
-4£¬¹ØÓÚÊ¹ÓÃ´®¿Úµ÷ÊÔÖúÊÖ¹¤¾ß£¨ÈçXCOM¡¢UartAssist¡¢sscom£©¹ý³ÌÖÐ³öÏÖ´òÓ¡ÂÒÂëµÄÎÊÌâ£¬¿ÉÒÔ°´ÕÕÒÔÏÂ½øÐÐ³¢ÊÔ½â¾ö£º
-	1£©¼ì²é³ÌÐòÖÐµÄ´®¿ÚÅäÖÃÊÇ·ñÓëÖúÊÖ¹¤¾ßµÄÒ»ÖÂ£¨²¨ÌØÂÊ¡¢Ð£ÑéÎ»¡¢Êý¾ÝÎ»¡¢Í£Ö¹Î»µÈ£©£¬²¢¼°Ê±Í³Ò»
-	2£©Ê¹ÓÃÓ¢ÎÄÀ´±íÊ¾ÐèÒª´òÓ¡µÄÄÚÈÝ
-	
-5£¬¹ØÓÚ±à¼­´úÂëÊ±£¬³öÏÖÊ¹ÓÃÊó±ê×ó¼üÑ¡ÔñÖÐÎÄ×¢ÊÍÊ±³öÏÖÂÒÂëµÄÎÊÌâ£¬¿ÉÒÔ°´ÕÕÒÔÏÂ½øÐÐ³¢ÊÔ½â¾ö£º
-	1£©ÐÞ¸Ä²Ëµ¥À¸¡°Edit¡±ÏÂµÄ¡°Configuration¡±ÏÂµÄ¡°Editor¡±ÏÂµÄ¡°Encoding¡±ÏÂµÄ¡°Chinese GB2312£¨Simplified£©¡±£¬È»ºóµã»÷¡°OK¡±±£´æÅäÖÃ
-	2£©ÐÞ¸Äµ±Ç°ProjectµÄÂ·¾¶ÎªÈ«Ó¢ÎÄ
-	
-6£¬¹ØÓÚÎÞ·¨ÔÚÏß»òÕßÀëÏß°²×°PackµÄÎÊÌâ£¬£¬¿ÉÒÔ°´ÕÕÒÔÏÂ½øÐÐ³¢ÊÔ½â¾ö£º
-	1£©ÔÚÏß°²×°£¬ARM·þÎñÆ÷ÍøËÙÂý£¬¿ÉÄÜÐèÒª¼ÓÔØºÜ³¤Ê±¼ä£¬ÌØ±ðÊÇ¹ú²úµ¥Æ¬»ú£¬¿ÉÄÜÃ»ÓÐÏòARM¹«¿ªÆäPack¶øÎÞ·¨¼ÓÔØ£¬¹Ê½¨ÒéÖ±½ÓÇø¹ÙÍøÏÂÔØPackÀëÏß°²×°
-	2£©ÀëÏß°²×°£¬°²×°Íê³ÉºóÍ»È»µ¯¿ò±¨´íÎÊÌâ£¬³¢ÊÔ¸ü¸ÄKeil uVision5 IDEÈí¼þ°²×°Ä¿Â¼ÏÂµÄ¡°TOOLS.INI¡±ÎÄ¼þÏÂµÄµÚ8ÐÐÎª¡°RTEPATH="C:\Keil_v5\Arm\Packs"¡±£¬¹Ø±ÕIDEÈí¼þkeilÈ»ºóÔÙÖØÐÂ°²×°Pack
+å‚è€ƒæ–‡æ¡£
+	1.1 stm32å°å®¹é‡ã€ä¸­å®¹é‡å’Œå¤§å®¹é‡äº§ åœ¨é€‰æ‹©å¯åŠ¨æ–‡ä»¶æ—¶è¯¥æ€Žä¹ˆé€‰ ï¼ˆhttp://news.eeworld.com.cn/mcu/article_2016092529767.htmlï¼‰
+	1.2 STM32F103å°å®¹é‡ã€ä¸­å®¹é‡å’Œå¤§å®¹é‡å•ç‰‡æœºä»‹ç»_stm32f103å•ç‰‡æœºä»‹ç» (https://blog.csdn.net/wsq_666/article/details/124135035)
